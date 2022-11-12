@@ -1,5 +1,5 @@
 FROM mjgargani/puppeteer:trybe1.0
-WORKDIR /
-ADD node_modules.tar.gz ./
+WORKDIR /app/user
+ADD ./node_modules.tar.gz .
 COPY . .
 CMD ["npm", "test"]
